@@ -1,8 +1,12 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",
-      "module": "commonjs",
-      "outDir": "out",
-      "sourceMap": true
+      "extends": "@tsconfig/node12/tsconfig.json",
+    
+      "compilerOptions": {
+        "preserveConstEnums": true,
+        "outDir": "out",
+        "sourceMap": true
+      },
+    
+      "exclude": ["node_modules", "**/*.spec.ts"]
     }
   }
